@@ -1,5 +1,5 @@
 # Nome do executável
-TARGET = MeuPrograma
+TARGET = NibbleEmu
 
 # Pastas
 SRC_DIR = src

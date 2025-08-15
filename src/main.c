@@ -1,8 +1,13 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include "../include/cpu.h"
 
 int main()
 {
-    printf("Hello Nibble!\n");
+    CPU cpu = { .PC = 0, .R0 = 0};
+    uint8_t ram[16];
+    uint8_t program[] = {
+        0b10000000
+    };
+    run_cpu(&cpu, program, ram);
+
     return 0;
 }
